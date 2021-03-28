@@ -1,0 +1,6 @@
+[submodule "third_party/vorbis"]
+	path = third_party/vorbis
+	url = https://gitlab.xiph.org/xiph/vorbis.git
+[submodule "third_party/Ogg"]
+	path = third_party/Ogg
+	url = https://gitlab.xiph.org/xiph/ogg.git
