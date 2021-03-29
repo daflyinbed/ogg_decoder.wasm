@@ -18,7 +18,7 @@ emcc -O3 --closure 1 \
     -s LLD_REPORT_UNDEFINED \
     -s MODULARIZE=1 \
     -s EXPORTED_FUNCTIONS="['_decode']" \
-    -s EXPORTED_RUNTIME_METHODS='["ccall", "FS"]' \
+    -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall", "FS"]' \
     -s EXPORT_NAME="createOggDecoder" \
     -Ibuild/include -Lbuild/lib -lvorbis -lvorbisfile -logg \
     src/main.c \
