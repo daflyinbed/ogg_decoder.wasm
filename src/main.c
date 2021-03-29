@@ -3,6 +3,7 @@
 #include <errno.h>
 #include <vorbis/vorbisfile.h>
 #include <string.h>
+#include <emscripten.h>
 #define WRITE_U32(buf, x)                               \
     *(buf) = (unsigned char)((x)&0xff);                 \
     *((buf) + 1) = (unsigned char)(((x) >> 8) & 0xff);  \
@@ -97,6 +98,8 @@ permute_channels(char *in, char *out, int len, int channels, int bytespersample)
     }
 }
 
+
+EMSCRIPTEN_KEEPALIVE
 int decode(char *infile, char *outfile)
 {
     FILE *in, *out;
