@@ -1,7 +1,9 @@
 {
-  "name": "ogg.wasm",
+  "name": "ogg_decoder.wasm",
   "version": "1.0.0",
-  "main": "index.js",
+  "browser": "build/index.js",
+  "main": "build/index.js",
+  "module": "build/index.js",
   "repository": "https://github.com/daflyinbed/ogg.wasm.git",
   "author": "夕舞八弦 <1677759063@qq.com>",
   "license": "MIT",

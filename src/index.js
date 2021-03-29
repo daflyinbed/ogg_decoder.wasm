@@ -1,4 +1,4 @@
-import createOggDecoder from "../build/libvorbis.mjs";
+import createOggDecoder from "./libvorbis.mjs";
 export async function createInstance(module) {
   return createOggDecoder(module);
 }

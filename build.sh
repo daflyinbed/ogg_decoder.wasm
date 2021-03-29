@@ -23,3 +23,6 @@ emcc -O3 --closure 1 \
     -Ibuild/include -Lbuild/lib -lvorbis -lvorbisfile -logg \
     src/main.c \
     -o build/libvorbis.mjs
+
+cp src/index.js build/
+cp src/index.d.ts build/
