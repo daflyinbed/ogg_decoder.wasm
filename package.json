@@ -4,7 +4,7 @@
   "browser": "build/index.js",
   "main": "build/index.js",
   "module": "build/index.js",
-  "repository": "https://github.com/daflyinbed/ogg.wasm.git",
+  "repository": "https://github.com/daflyinbed/ogg_decoder.wasm.git",
   "author": "夕舞八弦 <1677759063@qq.com>",
   "license": "MIT",
   "dependencies": {

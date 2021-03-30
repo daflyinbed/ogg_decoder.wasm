@@ -1,3 +1,4 @@
+// edit based on https://gitlab.xiph.org/xiph/vorbis-tools/-/blob/master/oggdec/oggdec.c
 #include <stdlib.h>
 #include <stdio.h>
 #include <errno.h>
