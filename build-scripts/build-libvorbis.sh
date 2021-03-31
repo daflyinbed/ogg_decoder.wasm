@@ -4,7 +4,7 @@ set -euo pipefail
 source $(dirname $0)/var.sh
 
 LIB_PATH=third_party/vorbis
-CFLAGS="-s USE_PTHREADS=1  $OPTIM_FLAGS -I$BUILD_DIR/include"
+CFLAGS="-s $OPTIM_FLAGS -I$BUILD_DIR/include"
 LDFLAGS="-L$BUILD_DIR/lib"
 CONF_FLAGS=(
   --prefix=$BUILD_DIR

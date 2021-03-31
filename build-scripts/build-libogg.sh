@@ -4,7 +4,7 @@ set -euo pipefail
 source $(dirname $0)/var.sh
 
 LIB_PATH=third_party/Ogg
-CFLAGS="-s USE_PTHREADS=1 $OPTIM_FLAGS"
+CFLAGS="-s $OPTIM_FLAGS"
 CONF_FLAGS=(
   --prefix=$BUILD_DIR
   --host=i686-linux # use i686 linux
