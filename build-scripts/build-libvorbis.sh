@@ -22,7 +22,7 @@ echo "CONF_FLAGS=${CONF_FLAGS[@]}"
   sed -i 's/-mno-ieee-fp//g' configure.ac &&
   emconfigure ./autogen.sh &&
   # https://github.com/kripken/emscripten/issues/264
-  sed -i 's/-O20/-O3/g' configure &&
+  # sed -i 's/-O20/-O3/g' configure &&
   # disable oggpack_writealign test
   sed -i 's/$ac_cv_func_oggpack_writealign/yes/' configure &&
   CFLAGS=$CFLAGS LDFLAGS=$LDFLAGS emconfigure ./configure "${CONF_FLAGS[@]}")

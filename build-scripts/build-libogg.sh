@@ -14,7 +14,7 @@ echo "CONF_FLAGS=${CONF_FLAGS[@]}"
 (cd $LIB_PATH &&
   emconfigure ./autogen.sh &&
   # https://github.com/kripken/emscripten/issues/264
-  sed -i 's/-O20/-O3/g' configure &&
+  # sed -i 's/-O20/-O3/g' configure &&
   CFLAGS=$CFLAGS emconfigure ./configure "${CONF_FLAGS[@]}")
 emmake make -C $LIB_PATH clean
 emmake make -C $LIB_PATH install -j

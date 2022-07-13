@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -eo pipefail
-
+export http_proxy=http://10.1.1.55:38888
 emcc -v
 
 SCRIPT_ROOT=$(dirname $0)/build-scripts

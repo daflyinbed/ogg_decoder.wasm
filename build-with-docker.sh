@@ -1,4 +1,4 @@
-EM_VERSION=2.0.12
+EM_VERSION=3.1.15
 
 docker pull emscripten/emsdk:$EM_VERSION
 

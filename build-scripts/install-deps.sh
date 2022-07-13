@@ -11,7 +11,7 @@ done
 
 # Install missing dependencies
 if [ ${#cmds[@]} -ne 0 ]; then
-    sed -i 's/http:/https:/g' /etc/apt/sources.list
+    # sed -i 's/http:/https:/g' /etc/apt/sources.list
     apt-get update
     apt-get install -y ${cmds[@]}
 fi
